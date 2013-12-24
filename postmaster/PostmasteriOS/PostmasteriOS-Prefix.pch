@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'PostmasteriOS' target in the 'PostmasteriOS' project
+//
+
+#import <Availability.h>
+
+#define __IPHONE_OS_VERSION_SOFT_MAX_REQUIRED __IPHONE_5_0
+
+#import "MJGAvailability.h"
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

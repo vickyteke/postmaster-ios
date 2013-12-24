@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA07053A17733E1400F341ED /* PostmasterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07053917733E1400F341ED /* PostmasterEntity.m */; };
+		DA07053D177350AB00F341ED /* Package.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07053C177350AB00F341ED /* Package.m */; };
+		DA0705401774668400F341ED /* Rate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07053F1774668400F341ED /* Rate.m */; };
+		DA07062A17746FA400F341ED /* RateQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07062917746FA400F341ED /* RateQueryMessage.m */; };
+		DA07062D1774722500F341ED /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07062C1774722500F341ED /* Service.m */; };
+		DA070630177472D400F341ED /* TrackingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07062F177472D300F341ED /* TrackingDetails.m */; };
+		DA0706331774738E00F341ED /* TrackingDetailsHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0706321774738D00F341ED /* TrackingDetailsHistory.m */; };
+		DA0706361774787B00F341ED /* DeliveryTimeQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0706351774787A00F341ED /* DeliveryTimeQueryMessage.m */; };
+		DA070639177479A900F341ED /* Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = DA070638177479A800F341ED /* Shipment.m */; };
+		DA07063D1778899D00F341ED /* DeliveryTimeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07063C1778899D00F341ED /* DeliveryTimeResult.m */; };
+		DA070640177889BD00F341ED /* OperationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07063F177889BD00F341ED /* OperationResult.m */; };
+		DA070643177889EE00F341ED /* RateResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA070642177889EE00F341ED /* RateResult.m */; };
+		DA07064617788A2000F341ED /* ShipmentCreationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07064517788A2000F341ED /* ShipmentCreationResult.m */; };
+		DA07064917788A3000F341ED /* ShipmentFetchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07064817788A2F00F341ED /* ShipmentFetchResult.m */; };
+		DA07064C17788A4200F341ED /* ShipmentTrackByReferenceResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07064B17788A3F00F341ED /* ShipmentTrackByReferenceResult.m */; };
+		DA07064F17788A4F00F341ED /* ShipmentTrackResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07064E17788A4F00F341ED /* ShipmentTrackResult.m */; };
+		DA38EB4E178DB846005D4F0A /* Base64Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38EB4D178DB846005D4F0A /* Base64Helper.m */; };
+		DA38EB4F178DB846005D4F0A /* Base64Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA38EB4D178DB846005D4F0A /* Base64Helper.m */; };
+		DA51F34517CF476800C26E93 /* MonitorPackageQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51F34417CF476800C26E93 /* MonitorPackageQueryMessage.m */; };
+		DA51F34817CF4CF100C26E93 /* MonitorPackageResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51F34717CF4CF100C26E93 /* MonitorPackageResult.m */; };
+		DA60023A17E875AD00A80A00 /* Customs.m in Sources */ = {isa = PBXBuildFile; fileRef = DA60023917E875AD00A80A00 /* Customs.m */; };
+		DA60023D17E875BE00A80A00 /* CustomsContent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA60023C17E875BE00A80A00 /* CustomsContent.m */; };
+		DA7FFF2F176F1F1800BFDC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FFF2E176F1F1800BFDC9C /* Foundation.framework */; };
+		DA7FFF34176F1F1800BFDC9C /* Postmaster.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA7FFF33176F1F1800BFDC9C /* Postmaster.h */; };
+		DA7FFF36176F1F1800BFDC9C /* Postmaster.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FFF35176F1F1800BFDC9C /* Postmaster.m */; };
+		DA7FFF3E176F1F1800BFDC9C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FFF3D176F1F1800BFDC9C /* SenTestingKit.framework */; };
+		DA7FFF40176F1F1800BFDC9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FFF3F176F1F1800BFDC9C /* UIKit.framework */; };
+		DA7FFF41176F1F1800BFDC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FFF2E176F1F1800BFDC9C /* Foundation.framework */; };
+		DA7FFF44176F1F1800BFDC9C /* libPostmasteriOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7FFF2B176F1F1800BFDC9C /* libPostmasteriOS.a */; };
+		DA7FFF4A176F1F1800BFDC9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7FFF48176F1F1800BFDC9C /* InfoPlist.strings */; };
+		DA7FFF4D176F1F1800BFDC9C /* PostmasteriOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FFF4C176F1F1800BFDC9C /* PostmasteriOSTests.m */; };
+		DA7FFF59176F293B00BFDC9C /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FFF58176F293B00BFDC9C /* Address.m */; };
+		DA7FFF5D176F327F00BFDC9C /* PostMasterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FFF5C176F327F00BFDC9C /* PostMasterRequest.m */; };
+		DA7FFF64176F3C4C00BFDC9C /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FFF63176F3C4C00BFDC9C /* Settings.m */; };
+		DA974B6D17C79D38002783C9 /* PackageFitResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA974B6C17C79D38002783C9 /* PackageFitResult.m */; };
+		DA9C8AF4178AE0C6008E2973 /* AddressValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8AF3178AE0C6008E2973 /* AddressValidationResult.m */; };
+		DA9C8AF7178AF309008E2973 /* ShipmentVoidResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C8AF6178AF308008E2973 /* ShipmentVoidResult.m */; };
+		DAA820F71792F03A005EF8C4 /* ShipmentFetchByIdResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA820F61792F03A005EF8C4 /* ShipmentFetchByIdResult.m */; };
+		DAAC0EF3179417F40094D9AD /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EDF179417F40094D9AD /* SBJsonStreamWriterState.m */; };
+		DAAC0EF4179417F40094D9AD /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EDF179417F40094D9AD /* SBJsonStreamWriterState.m */; };
+		DAAC0EF5179417F40094D9AD /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE4179417F40094D9AD /* SBJsonParser.m */; };
+		DAAC0EF6179417F40094D9AD /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE4179417F40094D9AD /* SBJsonParser.m */; };
+		DAAC0EF7179417F40094D9AD /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE6179417F40094D9AD /* SBJsonStreamWriter.m */; };
+		DAAC0EF8179417F40094D9AD /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE6179417F40094D9AD /* SBJsonStreamWriter.m */; };
+		DAAC0EF9179417F40094D9AD /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE7179417F40094D9AD /* SBJsonStreamParserAccumulator.m */; };
+		DAAC0EFA179417F40094D9AD /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EE7179417F40094D9AD /* SBJsonStreamParserAccumulator.m */; };
+		DAAC0EFB179417F40094D9AD /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEA179417F40094D9AD /* SBJsonStreamParser.m */; };
+		DAAC0EFC179417F40094D9AD /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEA179417F40094D9AD /* SBJsonStreamParser.m */; };
+		DAAC0EFD179417F40094D9AD /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEB179417F40094D9AD /* SBJsonStreamParserAdapter.m */; };
+		DAAC0EFE179417F40094D9AD /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEB179417F40094D9AD /* SBJsonStreamParserAdapter.m */; };
+		DAAC0EFF179417F40094D9AD /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEC179417F40094D9AD /* SBJsonWriter.m */; };
+		DAAC0F00179417F40094D9AD /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EEC179417F40094D9AD /* SBJsonWriter.m */; };
+		DAAC0F01179417F40094D9AD /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EED179417F40094D9AD /* SBJsonStreamWriterAccumulator.m */; };
+		DAAC0F02179417F40094D9AD /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EED179417F40094D9AD /* SBJsonStreamWriterAccumulator.m */; };
+		DAAC0F03179417F40094D9AD /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EF0179417F40094D9AD /* SBJsonStreamParserState.m */; };
+		DAAC0F04179417F40094D9AD /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EF0179417F40094D9AD /* SBJsonStreamParserState.m */; };
+		DAAC0F05179417F40094D9AD /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EF1179417F40094D9AD /* SBJsonStreamTokeniser.m */; };
+		DAAC0F06179417F40094D9AD /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAC0EF1179417F40094D9AD /* SBJsonStreamTokeniser.m */; };
+		DABC2F6F17C6132800B26397 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F6E17C6132800B26397 /* Item.m */; };
+		DABC2F7217C6133600B26397 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F7117C6133600B26397 /* Box.m */; };
+		DABC2F7517C619A000B26397 /* BoxFetchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F7417C619A000B26397 /* BoxFetchResult.m */; };
+		DABC2F7817C61BA800B26397 /* BoxCreationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F7717C61BA800B26397 /* BoxCreationResult.m */; };
+		DABC2F7B17C620D100B26397 /* PackageFitQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F7A17C620D000B26397 /* PackageFitQueryMessage.m */; };
+		DABC2F7E17C6245000B26397 /* BoxData.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F7D17C6245000B26397 /* BoxData.m */; };
+		DABC2F8117C6254000B26397 /* PackageFitInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DABC2F8017C6253F00B26397 /* PackageFitInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7FFF42176F1F1800BFDC9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA7FFF23176F1F1800BFDC9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7FFF2A176F1F1800BFDC9C;
+			remoteInfo = PostmasteriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA7FFF29176F1F1800BFDC9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				DA7FFF34176F1F1800BFDC9C /* Postmaster.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA07053817733E1400F341ED /* PostmasterEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostmasterEntity.h; sourceTree = "<group>"; };
+		DA07053917733E1400F341ED /* PostmasterEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostmasterEntity.m; sourceTree = "<group>"; };
+		DA07053B177350AB00F341ED /* Package.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Package.h; sourceTree = "<group>"; };
+		DA07053C177350AB00F341ED /* Package.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Package.m; sourceTree = "<group>"; };
+		DA07053E1774668400F341ED /* Rate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rate.h; sourceTree = "<group>"; };
+		DA07053F1774668400F341ED /* Rate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rate.m; sourceTree = "<group>"; };
+		DA07062817746FA400F341ED /* RateQueryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateQueryMessage.h; sourceTree = "<group>"; };
+		DA07062917746FA400F341ED /* RateQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateQueryMessage.m; sourceTree = "<group>"; };
+		DA07062B1774722400F341ED /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		DA07062C1774722500F341ED /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		DA07062E177472D300F341ED /* TrackingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingDetails.h; sourceTree = "<group>"; };
+		DA07062F177472D300F341ED /* TrackingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingDetails.m; sourceTree = "<group>"; };
+		DA0706311774738D00F341ED /* TrackingDetailsHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingDetailsHistory.h; sourceTree = "<group>"; };
+		DA0706321774738D00F341ED /* TrackingDetailsHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingDetailsHistory.m; sourceTree = "<group>"; };
+		DA0706341774787900F341ED /* DeliveryTimeQueryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryTimeQueryMessage.h; sourceTree = "<group>"; };
+		DA0706351774787A00F341ED /* DeliveryTimeQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryTimeQueryMessage.m; sourceTree = "<group>"; };
+		DA070637177479A700F341ED /* Shipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shipment.h; sourceTree = "<group>"; };
+		DA070638177479A800F341ED /* Shipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shipment.m; sourceTree = "<group>"; };
+		DA07063B1778899D00F341ED /* DeliveryTimeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryTimeResult.h; sourceTree = "<group>"; };
+		DA07063C1778899D00F341ED /* DeliveryTimeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryTimeResult.m; sourceTree = "<group>"; };
+		DA07063E177889BD00F341ED /* OperationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationResult.h; sourceTree = "<group>"; };
+		DA07063F177889BD00F341ED /* OperationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationResult.m; sourceTree = "<group>"; };
+		DA070641177889EE00F341ED /* RateResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateResult.h; sourceTree = "<group>"; };
+		DA070642177889EE00F341ED /* RateResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateResult.m; sourceTree = "<group>"; };
+		DA07064417788A1F00F341ED /* ShipmentCreationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentCreationResult.h; sourceTree = "<group>"; };
+		DA07064517788A2000F341ED /* ShipmentCreationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentCreationResult.m; sourceTree = "<group>"; };
+		DA07064717788A2F00F341ED /* ShipmentFetchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentFetchResult.h; sourceTree = "<group>"; };
+		DA07064817788A2F00F341ED /* ShipmentFetchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentFetchResult.m; sourceTree = "<group>"; };
+		DA07064A17788A3E00F341ED /* ShipmentTrackByReferenceResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentTrackByReferenceResult.h; sourceTree = "<group>"; };
+		DA07064B17788A3F00F341ED /* ShipmentTrackByReferenceResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentTrackByReferenceResult.m; sourceTree = "<group>"; };
+		DA07064D17788A4E00F341ED /* ShipmentTrackResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentTrackResult.h; sourceTree = "<group>"; };
+		DA07064E17788A4F00F341ED /* ShipmentTrackResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentTrackResult.m; sourceTree = "<group>"; };
+		DA38EB4C178DB846005D4F0A /* Base64Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Helper.h; sourceTree = "<group>"; };
+		DA38EB4D178DB846005D4F0A /* Base64Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Helper.m; sourceTree = "<group>"; };
+		DA51F34317CF476800C26E93 /* MonitorPackageQueryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorPackageQueryMessage.h; sourceTree = "<group>"; };
+		DA51F34417CF476800C26E93 /* MonitorPackageQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorPackageQueryMessage.m; sourceTree = "<group>"; };
+		DA51F34617CF4CF100C26E93 /* MonitorPackageResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorPackageResult.h; sourceTree = "<group>"; };
+		DA51F34717CF4CF100C26E93 /* MonitorPackageResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorPackageResult.m; sourceTree = "<group>"; };
+		DA60023817E875AD00A80A00 /* Customs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customs.h; sourceTree = "<group>"; };
+		DA60023917E875AD00A80A00 /* Customs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customs.m; sourceTree = "<group>"; };
+		DA60023B17E875BE00A80A00 /* CustomsContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomsContent.h; sourceTree = "<group>"; };
+		DA60023C17E875BE00A80A00 /* CustomsContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomsContent.m; sourceTree = "<group>"; };
+		DA7FFF2B176F1F1800BFDC9C /* libPostmasteriOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPostmasteriOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7FFF2E176F1F1800BFDC9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA7FFF32176F1F1800BFDC9C /* PostmasteriOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PostmasteriOS-Prefix.pch"; sourceTree = "<group>"; };
+		DA7FFF33176F1F1800BFDC9C /* Postmaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Postmaster.h; sourceTree = "<group>"; };
+		DA7FFF35176F1F1800BFDC9C /* Postmaster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Postmaster.m; sourceTree = "<group>"; };
+		DA7FFF3C176F1F1800BFDC9C /* PostmasteriOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostmasteriOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7FFF3D176F1F1800BFDC9C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA7FFF3F176F1F1800BFDC9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA7FFF47176F1F1800BFDC9C /* PostmasteriOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PostmasteriOSTests-Info.plist"; sourceTree = "<group>"; };
+		DA7FFF49176F1F1800BFDC9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA7FFF4B176F1F1800BFDC9C /* PostmasteriOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostmasteriOSTests.h; sourceTree = "<group>"; };
+		DA7FFF4C176F1F1800BFDC9C /* PostmasteriOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostmasteriOSTests.m; sourceTree = "<group>"; };
+		DA7FFF57176F293B00BFDC9C /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		DA7FFF58176F293B00BFDC9C /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		DA7FFF5B176F327F00BFDC9C /* PostMasterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostMasterRequest.h; sourceTree = "<group>"; };
+		DA7FFF5C176F327F00BFDC9C /* PostMasterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostMasterRequest.m; sourceTree = "<group>"; };
+		DA7FFF62176F3C4C00BFDC9C /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		DA7FFF63176F3C4C00BFDC9C /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		DA974B6B17C79D38002783C9 /* PackageFitResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageFitResult.h; sourceTree = "<group>"; };
+		DA974B6C17C79D38002783C9 /* PackageFitResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageFitResult.m; sourceTree = "<group>"; };
+		DA9C8AF2178AE0C6008E2973 /* AddressValidationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressValidationResult.h; sourceTree = "<group>"; };
+		DA9C8AF3178AE0C6008E2973 /* AddressValidationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidationResult.m; sourceTree = "<group>"; };
+		DA9C8AF5178AF308008E2973 /* ShipmentVoidResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentVoidResult.h; sourceTree = "<group>"; };
+		DA9C8AF6178AF308008E2973 /* ShipmentVoidResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentVoidResult.m; sourceTree = "<group>"; };
+		DAA820F51792F03A005EF8C4 /* ShipmentFetchByIdResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipmentFetchByIdResult.h; sourceTree = "<group>"; };
+		DAA820F61792F03A005EF8C4 /* ShipmentFetchByIdResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipmentFetchByIdResult.m; sourceTree = "<group>"; };
+		DAAC0EDE179417F40094D9AD /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		DAAC0EDF179417F40094D9AD /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		DAAC0EE0179417F40094D9AD /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		DAAC0EE1179417F40094D9AD /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		DAAC0EE2179417F40094D9AD /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		DAAC0EE3179417F40094D9AD /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		DAAC0EE4179417F40094D9AD /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DAAC0EE5179417F40094D9AD /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DAAC0EE6179417F40094D9AD /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		DAAC0EE7179417F40094D9AD /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		DAAC0EE8179417F40094D9AD /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		DAAC0EE9179417F40094D9AD /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		DAAC0EEA179417F40094D9AD /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		DAAC0EEB179417F40094D9AD /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		DAAC0EEC179417F40094D9AD /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DAAC0EED179417F40094D9AD /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		DAAC0EEE179417F40094D9AD /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DAAC0EEF179417F40094D9AD /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		DAAC0EF0179417F40094D9AD /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		DAAC0EF1179417F40094D9AD /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		DAAC0EF2179417F40094D9AD /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		DAAC0F0817941DEA0094D9AD /* MJGAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGAvailability.h; sourceTree = "<group>"; };
+		DABC2F6D17C6132800B26397 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		DABC2F6E17C6132800B26397 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		DABC2F7017C6133600B26397 /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		DABC2F7117C6133600B26397 /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		DABC2F7317C619A000B26397 /* BoxFetchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxFetchResult.h; sourceTree = "<group>"; };
+		DABC2F7417C619A000B26397 /* BoxFetchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxFetchResult.m; sourceTree = "<group>"; };
+		DABC2F7617C61BA800B26397 /* BoxCreationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxCreationResult.h; sourceTree = "<group>"; };
+		DABC2F7717C61BA800B26397 /* BoxCreationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxCreationResult.m; sourceTree = "<group>"; };
+		DABC2F7917C620D000B26397 /* PackageFitQueryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageFitQueryMessage.h; sourceTree = "<group>"; };
+		DABC2F7A17C620D000B26397 /* PackageFitQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageFitQueryMessage.m; sourceTree = "<group>"; };
+		DABC2F7C17C6244F00B26397 /* BoxData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxData.h; sourceTree = "<group>"; };
+		DABC2F7D17C6245000B26397 /* BoxData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxData.m; sourceTree = "<group>"; };
+		DABC2F7F17C6253F00B26397 /* PackageFitInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageFitInfo.h; sourceTree = "<group>"; };
+		DABC2F8017C6253F00B26397 /* PackageFitInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageFitInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7FFF28176F1F1800BFDC9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FFF2F176F1F1800BFDC9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7FFF38176F1F1800BFDC9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FFF3E176F1F1800BFDC9C /* SenTestingKit.framework in Frameworks */,
+				DA7FFF40176F1F1800BFDC9C /* UIKit.framework in Frameworks */,
+				DA7FFF41176F1F1800BFDC9C /* Foundation.framework in Frameworks */,
+				DA7FFF44176F1F1800BFDC9C /* libPostmasteriOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA07063A1778890700F341ED /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				DA07063E177889BD00F341ED /* OperationResult.h */,
+				DA07063F177889BD00F341ED /* OperationResult.m */,
+				DA07063B1778899D00F341ED /* DeliveryTimeResult.h */,
+				DA07063C1778899D00F341ED /* DeliveryTimeResult.m */,
+				DA070641177889EE00F341ED /* RateResult.h */,
+				DA070642177889EE00F341ED /* RateResult.m */,
+				DA07064417788A1F00F341ED /* ShipmentCreationResult.h */,
+				DA07064517788A2000F341ED /* ShipmentCreationResult.m */,
+				DA07064717788A2F00F341ED /* ShipmentFetchResult.h */,
+				DA07064817788A2F00F341ED /* ShipmentFetchResult.m */,
+				DA07064A17788A3E00F341ED /* ShipmentTrackByReferenceResult.h */,
+				DA07064B17788A3F00F341ED /* ShipmentTrackByReferenceResult.m */,
+				DA07064D17788A4E00F341ED /* ShipmentTrackResult.h */,
+				DA07064E17788A4F00F341ED /* ShipmentTrackResult.m */,
+				DA9C8AF2178AE0C6008E2973 /* AddressValidationResult.h */,
+				DA9C8AF3178AE0C6008E2973 /* AddressValidationResult.m */,
+				DA9C8AF5178AF308008E2973 /* ShipmentVoidResult.h */,
+				DA9C8AF6178AF308008E2973 /* ShipmentVoidResult.m */,
+				DAA820F51792F03A005EF8C4 /* ShipmentFetchByIdResult.h */,
+				DAA820F61792F03A005EF8C4 /* ShipmentFetchByIdResult.m */,
+				DABC2F7317C619A000B26397 /* BoxFetchResult.h */,
+				DABC2F7417C619A000B26397 /* BoxFetchResult.m */,
+				DABC2F7617C61BA800B26397 /* BoxCreationResult.h */,
+				DABC2F7717C61BA800B26397 /* BoxCreationResult.m */,
+				DA974B6B17C79D38002783C9 /* PackageFitResult.h */,
+				DA974B6C17C79D38002783C9 /* PackageFitResult.m */,
+				DA51F34617CF4CF100C26E93 /* MonitorPackageResult.h */,
+				DA51F34717CF4CF100C26E93 /* MonitorPackageResult.m */,
+			);
+			name = Results;
+			sourceTree = "<group>";
+		};
+		DA7FFF22176F1F1800BFDC9C = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF30176F1F1800BFDC9C /* PostmasteriOS */,
+				DA7FFF45176F1F1800BFDC9C /* PostmasteriOSTests */,
+				DA7FFF2D176F1F1800BFDC9C /* Frameworks */,
+				DA7FFF2C176F1F1800BFDC9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7FFF2C176F1F1800BFDC9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF2B176F1F1800BFDC9C /* libPostmasteriOS.a */,
+				DA7FFF3C176F1F1800BFDC9C /* PostmasteriOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7FFF2D176F1F1800BFDC9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF2E176F1F1800BFDC9C /* Foundation.framework */,
+				DA7FFF3D176F1F1800BFDC9C /* SenTestingKit.framework */,
+				DA7FFF3F176F1F1800BFDC9C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7FFF30176F1F1800BFDC9C /* PostmasteriOS */ = {
+			isa = PBXGroup;
+			children = (
+				DAAC0F0817941DEA0094D9AD /* MJGAvailability.h */,
+				DAAC0EDD179417E10094D9AD /* JSON */,
+				DA7FFF5A176F326000BFDC9C /* Connections */,
+				DA7FFF56176F292300BFDC9C /* Entities */,
+				DA07063A1778890700F341ED /* Results */,
+				DA7FFF33176F1F1800BFDC9C /* Postmaster.h */,
+				DA7FFF35176F1F1800BFDC9C /* Postmaster.m */,
+				DA7FFF31176F1F1800BFDC9C /* Supporting Files */,
+				DA7FFF62176F3C4C00BFDC9C /* Settings.h */,
+				DA7FFF63176F3C4C00BFDC9C /* Settings.m */,
+			);
+			path = PostmasteriOS;
+			sourceTree = "<group>";
+		};
+		DA7FFF31176F1F1800BFDC9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF32176F1F1800BFDC9C /* PostmasteriOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7FFF45176F1F1800BFDC9C /* PostmasteriOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF4B176F1F1800BFDC9C /* PostmasteriOSTests.h */,
+				DA7FFF4C176F1F1800BFDC9C /* PostmasteriOSTests.m */,
+				DA7FFF46176F1F1800BFDC9C /* Supporting Files */,
+			);
+			path = PostmasteriOSTests;
+			sourceTree = "<group>";
+		};
+		DA7FFF46176F1F1800BFDC9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF47176F1F1800BFDC9C /* PostmasteriOSTests-Info.plist */,
+				DA7FFF48176F1F1800BFDC9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7FFF56176F292300BFDC9C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FFF57176F293B00BFDC9C /* Address.h */,
+				DA7FFF58176F293B00BFDC9C /* Address.m */,
+				DA07053817733E1400F341ED /* PostmasterEntity.h */,
+				DA07053917733E1400F341ED /* PostmasterEntity.m */,
+				DA07053B177350AB00F341ED /* Package.h */,
+				DA07053C177350AB00F341ED /* Package.m */,
+				DA07053E1774668400F341ED /* Rate.h */,
+				DA07053F1774668400F341ED /* Rate.m */,
+				DA07062817746FA400F341ED /* RateQueryMessage.h */,
+				DA07062917746FA400F341ED /* RateQueryMessage.m */,
+				DA07062B1774722400F341ED /* Service.h */,
+				DA07062C1774722500F341ED /* Service.m */,
+				DA07062E177472D300F341ED /* TrackingDetails.h */,
+				DA07062F177472D300F341ED /* TrackingDetails.m */,
+				DA0706311774738D00F341ED /* TrackingDetailsHistory.h */,
+				DA0706321774738D00F341ED /* TrackingDetailsHistory.m */,
+				DA0706341774787900F341ED /* DeliveryTimeQueryMessage.h */,
+				DA0706351774787A00F341ED /* DeliveryTimeQueryMessage.m */,
+				DA070637177479A700F341ED /* Shipment.h */,
+				DA070638177479A800F341ED /* Shipment.m */,
+				DABC2F6D17C6132800B26397 /* Item.h */,
+				DABC2F6E17C6132800B26397 /* Item.m */,
+				DABC2F7017C6133600B26397 /* Box.h */,
+				DABC2F7117C6133600B26397 /* Box.m */,
+				DABC2F7917C620D000B26397 /* PackageFitQueryMessage.h */,
+				DABC2F7A17C620D000B26397 /* PackageFitQueryMessage.m */,
+				DABC2F7C17C6244F00B26397 /* BoxData.h */,
+				DABC2F7D17C6245000B26397 /* BoxData.m */,
+				DABC2F7F17C6253F00B26397 /* PackageFitInfo.h */,
+				DABC2F8017C6253F00B26397 /* PackageFitInfo.m */,
+				DA51F34317CF476800C26E93 /* MonitorPackageQueryMessage.h */,
+				DA51F34417CF476800C26E93 /* MonitorPackageQueryMessage.m */,
+				DA60023817E875AD00A80A00 /* Customs.h */,
+				DA60023917E875AD00A80A00 /* Customs.m */,
+				DA60023B17E875BE00A80A00 /* CustomsContent.h */,
+				DA60023C17E875BE00A80A00 /* CustomsContent.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		DA7FFF5A176F326000BFDC9C /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				DA38EB4C178DB846005D4F0A /* Base64Helper.h */,
+				DA38EB4D178DB846005D4F0A /* Base64Helper.m */,
+				DA7FFF5B176F327F00BFDC9C /* PostMasterRequest.h */,
+				DA7FFF5C176F327F00BFDC9C /* PostMasterRequest.m */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		DAAC0EDD179417E10094D9AD /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DAAC0EDE179417F40094D9AD /* SBJson.h */,
+				DAAC0EDF179417F40094D9AD /* SBJsonStreamWriterState.m */,
+				DAAC0EE0179417F40094D9AD /* SBJsonStreamWriterState.h */,
+				DAAC0EE1179417F40094D9AD /* SBJsonStreamParserState.h */,
+				DAAC0EE2179417F40094D9AD /* SBJsonStreamWriterAccumulator.h */,
+				DAAC0EE3179417F40094D9AD /* SBJsonStreamWriter.h */,
+				DAAC0EE4179417F40094D9AD /* SBJsonParser.m */,
+				DAAC0EE5179417F40094D9AD /* SBJsonParser.h */,
+				DAAC0EE6179417F40094D9AD /* SBJsonStreamWriter.m */,
+				DAAC0EE7179417F40094D9AD /* SBJsonStreamParserAccumulator.m */,
+				DAAC0EE8179417F40094D9AD /* SBJsonStreamParser.h */,
+				DAAC0EE9179417F40094D9AD /* SBJsonStreamParserAdapter.h */,
+				DAAC0EEA179417F40094D9AD /* SBJsonStreamParser.m */,
+				DAAC0EEB179417F40094D9AD /* SBJsonStreamParserAdapter.m */,
+				DAAC0EEC179417F40094D9AD /* SBJsonWriter.m */,
+				DAAC0EED179417F40094D9AD /* SBJsonStreamWriterAccumulator.m */,
+				DAAC0EEE179417F40094D9AD /* SBJsonWriter.h */,
+				DAAC0EEF179417F40094D9AD /* SBJsonStreamParserAccumulator.h */,
+				DAAC0EF0179417F40094D9AD /* SBJsonStreamParserState.m */,
+				DAAC0EF1179417F40094D9AD /* SBJsonStreamTokeniser.m */,
+				DAAC0EF2179417F40094D9AD /* SBJsonStreamTokeniser.h */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7FFF2A176F1F1800BFDC9C /* PostmasteriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7FFF50176F1F1800BFDC9C /* Build configuration list for PBXNativeTarget "PostmasteriOS" */;
+			buildPhases = (
+				DA7FFF27176F1F1800BFDC9C /* Sources */,
+				DA7FFF28176F1F1800BFDC9C /* Frameworks */,
+				DA7FFF29176F1F1800BFDC9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostmasteriOS;
+			productName = PostmasteriOS;
+			productReference = DA7FFF2B176F1F1800BFDC9C /* libPostmasteriOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA7FFF3B176F1F1800BFDC9C /* PostmasteriOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7FFF53176F1F1800BFDC9C /* Build configuration list for PBXNativeTarget "PostmasteriOSTests" */;
+			buildPhases = (
+				DA7FFF37176F1F1800BFDC9C /* Sources */,
+				DA7FFF38176F1F1800BFDC9C /* Frameworks */,
+				DA7FFF39176F1F1800BFDC9C /* Resources */,
+				DA7FFF3A176F1F1800BFDC9C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA7FFF43176F1F1800BFDC9C /* PBXTargetDependency */,
+			);
+			name = PostmasteriOSTests;
+			productName = PostmasteriOSTests;
+			productReference = DA7FFF3C176F1F1800BFDC9C /* PostmasteriOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7FFF23176F1F1800BFDC9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = STXNext;
+			};
+			buildConfigurationList = DA7FFF26176F1F1800BFDC9C /* Build configuration list for PBXProject "PostmasteriOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA7FFF22176F1F1800BFDC9C;
+			productRefGroup = DA7FFF2C176F1F1800BFDC9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7FFF2A176F1F1800BFDC9C /* PostmasteriOS */,
+				DA7FFF3B176F1F1800BFDC9C /* PostmasteriOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7FFF39176F1F1800BFDC9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FFF4A176F1F1800BFDC9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA7FFF3A176F1F1800BFDC9C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7FFF27176F1F1800BFDC9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FFF36176F1F1800BFDC9C /* Postmaster.m in Sources */,
+				DA7FFF59176F293B00BFDC9C /* Address.m in Sources */,
+				DA7FFF5D176F327F00BFDC9C /* PostMasterRequest.m in Sources */,
+				DA7FFF64176F3C4C00BFDC9C /* Settings.m in Sources */,
+				DA07053A17733E1400F341ED /* PostmasterEntity.m in Sources */,
+				DA07053D177350AB00F341ED /* Package.m in Sources */,
+				DA0705401774668400F341ED /* Rate.m in Sources */,
+				DA07062A17746FA400F341ED /* RateQueryMessage.m in Sources */,
+				DA07062D1774722500F341ED /* Service.m in Sources */,
+				DA070630177472D400F341ED /* TrackingDetails.m in Sources */,
+				DA0706331774738E00F341ED /* TrackingDetailsHistory.m in Sources */,
+				DA0706361774787B00F341ED /* DeliveryTimeQueryMessage.m in Sources */,
+				DA070639177479A900F341ED /* Shipment.m in Sources */,
+				DA07063D1778899D00F341ED /* DeliveryTimeResult.m in Sources */,
+				DA070640177889BD00F341ED /* OperationResult.m in Sources */,
+				DA070643177889EE00F341ED /* RateResult.m in Sources */,
+				DA07064617788A2000F341ED /* ShipmentCreationResult.m in Sources */,
+				DA07064917788A3000F341ED /* ShipmentFetchResult.m in Sources */,
+				DA07064C17788A4200F341ED /* ShipmentTrackByReferenceResult.m in Sources */,
+				DA07064F17788A4F00F341ED /* ShipmentTrackResult.m in Sources */,
+				DA9C8AF4178AE0C6008E2973 /* AddressValidationResult.m in Sources */,
+				DA9C8AF7178AF309008E2973 /* ShipmentVoidResult.m in Sources */,
+				DA38EB4E178DB846005D4F0A /* Base64Helper.m in Sources */,
+				DAA820F71792F03A005EF8C4 /* ShipmentFetchByIdResult.m in Sources */,
+				DAAC0EF3179417F40094D9AD /* SBJsonStreamWriterState.m in Sources */,
+				DAAC0EF5179417F40094D9AD /* SBJsonParser.m in Sources */,
+				DAAC0EF7179417F40094D9AD /* SBJsonStreamWriter.m in Sources */,
+				DAAC0EF9179417F40094D9AD /* SBJsonStreamParserAccumulator.m in Sources */,
+				DAAC0EFB179417F40094D9AD /* SBJsonStreamParser.m in Sources */,
+				DAAC0EFD179417F40094D9AD /* SBJsonStreamParserAdapter.m in Sources */,
+				DAAC0EFF179417F40094D9AD /* SBJsonWriter.m in Sources */,
+				DAAC0F01179417F40094D9AD /* SBJsonStreamWriterAccumulator.m in Sources */,
+				DAAC0F03179417F40094D9AD /* SBJsonStreamParserState.m in Sources */,
+				DAAC0F05179417F40094D9AD /* SBJsonStreamTokeniser.m in Sources */,
+				DABC2F6F17C6132800B26397 /* Item.m in Sources */,
+				DABC2F7217C6133600B26397 /* Box.m in Sources */,
+				DABC2F7517C619A000B26397 /* BoxFetchResult.m in Sources */,
+				DABC2F7817C61BA800B26397 /* BoxCreationResult.m in Sources */,
+				DABC2F7B17C620D100B26397 /* PackageFitQueryMessage.m in Sources */,
+				DABC2F7E17C6245000B26397 /* BoxData.m in Sources */,
+				DABC2F8117C6254000B26397 /* PackageFitInfo.m in Sources */,
+				DA974B6D17C79D38002783C9 /* PackageFitResult.m in Sources */,
+				DA51F34517CF476800C26E93 /* MonitorPackageQueryMessage.m in Sources */,
+				DA51F34817CF4CF100C26E93 /* MonitorPackageResult.m in Sources */,
+				DA60023A17E875AD00A80A00 /* Customs.m in Sources */,
+				DA60023D17E875BE00A80A00 /* CustomsContent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7FFF37176F1F1800BFDC9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7FFF4D176F1F1800BFDC9C /* PostmasteriOSTests.m in Sources */,
+				DA38EB4F178DB846005D4F0A /* Base64Helper.m in Sources */,
+				DAAC0EF4179417F40094D9AD /* SBJsonStreamWriterState.m in Sources */,
+				DAAC0EF6179417F40094D9AD /* SBJsonParser.m in Sources */,
+				DAAC0EF8179417F40094D9AD /* SBJsonStreamWriter.m in Sources */,
+				DAAC0EFA179417F40094D9AD /* SBJsonStreamParserAccumulator.m in Sources */,
+				DAAC0EFC179417F40094D9AD /* SBJsonStreamParser.m in Sources */,
+				DAAC0EFE179417F40094D9AD /* SBJsonStreamParserAdapter.m in Sources */,
+				DAAC0F00179417F40094D9AD /* SBJsonWriter.m in Sources */,
+				DAAC0F02179417F40094D9AD /* SBJsonStreamWriterAccumulator.m in Sources */,
+				DAAC0F04179417F40094D9AD /* SBJsonStreamParserState.m in Sources */,
+				DAAC0F06179417F40094D9AD /* SBJsonStreamTokeniser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7FFF43176F1F1800BFDC9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7FFF2A176F1F1800BFDC9C /* PostmasteriOS */;
+			targetProxy = DA7FFF42176F1F1800BFDC9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA7FFF48176F1F1800BFDC9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7FFF49176F1F1800BFDC9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7FFF4E176F1F1800BFDC9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA7FFF4F176F1F1800BFDC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7FFF51176F1F1800BFDC9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PostmasteriOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostmasteriOS/PostmasteriOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA7FFF52176F1F1800BFDC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PostmasteriOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostmasteriOS/PostmasteriOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA7FFF54176F1F1800BFDC9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostmasteriOS/PostmasteriOS-Prefix.pch";
+				INFOPLIST_FILE = "PostmasteriOSTests/PostmasteriOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DA7FFF55176F1F1800BFDC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PostmasteriOS/PostmasteriOS-Prefix.pch";
+				INFOPLIST_FILE = "PostmasteriOSTests/PostmasteriOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7FFF26176F1F1800BFDC9C /* Build configuration list for PBXProject "PostmasteriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FFF4E176F1F1800BFDC9C /* Debug */,
+				DA7FFF4F176F1F1800BFDC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7FFF50176F1F1800BFDC9C /* Build configuration list for PBXNativeTarget "PostmasteriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FFF51176F1F1800BFDC9C /* Debug */,
+				DA7FFF52176F1F1800BFDC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7FFF53176F1F1800BFDC9C /* Build configuration list for PBXNativeTarget "PostmasteriOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7FFF54176F1F1800BFDC9C /* Debug */,
+				DA7FFF55176F1F1800BFDC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7FFF23176F1F1800BFDC9C /* Project object */;
+}
