@@ -33,7 +33,6 @@ NSString *const SHIPMENT_KEY_SERVICE = @"service";
 NSString *const SHIPMENT_KEY_REFERENCE = @"reference";
 NSString *const SHIPMENT_KEY_PORDER = @"po_number";
 
-
 -(NSDictionary*)toJSONReadyDictionary{
     NSMutableDictionary* dict = [NSMutableDictionary dictionary];
     [self putPropertyToJsonReadyDictionary:dict ofKey:SHIPMENT_KEY_CARRIER andObject:self.carrier];
